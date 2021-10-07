@@ -36,7 +36,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join Session</button>
 									<?php } else { ?> 
-									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Create Account</button> <?php } ?>
+									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Create Account</button> <?php } ?>
 								
 
 									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Game Account</button>
