@@ -71,9 +71,6 @@
     	</div>
     </div>
 
-	<!-- section footer end -->
-	<div class="copyright">2019 All Rights Reserved. <a href="https://html.design">Free html  Templates</a></div>
-
 
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
