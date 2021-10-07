@@ -21,9 +21,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 					<br>
 					<br>
 					<br>
-					<br>
-					<br>
-					<br>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
