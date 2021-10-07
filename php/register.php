@@ -33,7 +33,7 @@ if(!isset($_SESSION['user_id'])) {
 
 }
 
-header('Location: '.$_SERVER["HTTP_HOST"].' ');
+header('Location: https://'.$_SERVER["HTTP_HOST"].' ');
 
 
 ?>
