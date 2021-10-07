@@ -32,7 +32,7 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
    </head>
-   
+
       <!-- body -->
       <body class="main-layout">
 
@@ -51,8 +51,8 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                            <a class="nav-item nav-link" href="index.php">Home</a>
-                           <a class="nav-item nav-link" href="singleplayer-game.php">Singleplayer Game</a>
-                           <a class="nav-item nav-link" href="sources.php">Sources Used</a>
+                           <a class="nav-item nav-link" href="singleplayer-game.php">Singleplayer<p style='opacity: 0;'>f</p>Game</a>
+                           <a class="nav-item nav-link" href="sources.php">Sources<p style='opacity: 0;'>f</p>Used</a>
                            <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
                            <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
                         </div>
