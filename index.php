@@ -19,7 +19,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
 								<div class="page_no">#$#$/16</div>
-								<p class="mens_taital_2">Men Shoes</p>
 							</div>
 							<div class="col-sm-5">
 								<div class="banner_taital">
@@ -38,6 +37,21 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
                 </div>
             </div>
         </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<br>
 		<br>
 		<br>
