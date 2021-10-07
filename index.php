@@ -28,13 +28,17 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 								<div class="banner_taital">
 									<h1 class="banner_text">Waiting on Players</h1>
 										<?php if(isset($_SESSION['user_id'])) { ?>
-											
-
+											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
+										<?php
 										}
 										?>
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join Session</button>
+									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join Session</button>
+									<?php } else { ?> 
+									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Create Account</button> <?php } ?>
+								
+
 									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Game Account</button>
 								</div>
 							</div>
