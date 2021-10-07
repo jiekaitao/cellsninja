@@ -17,7 +17,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item">
                     <div class="row">
 					<div class="col-sm-2 padding_0">
 						<p class="mens_taital">Men Shoes</p>
