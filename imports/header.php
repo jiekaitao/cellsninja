@@ -47,7 +47,7 @@ session_start();
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="logo" style='font-size: larger;'><b><h4 style="color: red;">Organelle<span style='color: gray;'>Trail</span></h4></b>
+					<div class="logo" style='font-size: larger;'><b><h4 style="color: red;">Cells<span style='color: gray;'>Ninja</span></h4></b>
 				</div>
 				<div class="col-sm-9">
 					<nav class="navbar navbar-expand-lg navbar-light bg-light">

@@ -27,7 +27,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 							<div class="col-sm-5">
 								<div class="banner_taital">
 									<h1 class="banner_text">Waiting on Players</h1>
-									<h1 class="mens_text"><strong>Cells Ninja</strong></h1>
+									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<button class="buy_bt">Buy Now</button>
 									<button class="more_bt">See More</button>
@@ -61,7 +61,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 		<div class="collection_section">
     	<div class="container">
     		<h1 class="new_text"><strong>Game Objective</strong></h1>
-    	    <p class="consectetur_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+    	    <p class="consectetur_text">Build</p>
     	</div>
     </div>
     <div class="collectipn_section_3 layuot_padding">
