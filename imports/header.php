@@ -57,10 +57,12 @@ session_start();
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                            <a class="nav-item nav-link" href="index.php">Home</a>
-                           <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacing</a>
-                           <a class="nav-item nav-link" href="singleplayer-game.php">Singleplayer Game</a>
-                           <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacing</a>
+                           <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
+                           <a class="nav-item nav-link" href="game.php">Game</a>
+                           <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
                            <a class="nav-item nav-link" href="sources.php">Sources Used</a>
+                           <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
+                           <a class="nav-item nav-link" href="names.php">Names</a>
                            <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a>
                            <a class="nav-item nav-link last" href="contact.html"><img src="images/shop_icon.png"></a>
                         </div>
