@@ -22,15 +22,20 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 							<div class="row">
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
-								<div class="page_no">0/16</div>
+								<div class="page_no">0/17</div>
 							</div>
 							<div class="col-sm-5">
 								<div class="banner_taital">
 									<h1 class="banner_text">Waiting on Players</h1>
+										<?php if(isset($_SESSION['user_id'])) { ?>
+											
+
+										}
+										?>
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<button class="buy_bt">Buy Now</button>
-									<button class="more_bt">See More</button>
+									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join Session</button>
+									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Game Account</button>
 								</div>
 							</div>
 							<div class="col-sm-5">
