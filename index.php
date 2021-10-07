@@ -12,6 +12,19 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 						<li data-target="#myCarousel" data-slide-to="0"></li>
 					</ol>
 
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 						<div class="active">
@@ -37,12 +50,6 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
                 </div>
             </div>
         </div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<br>
 		<br>
 		<br>
