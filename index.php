@@ -54,7 +54,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">New Acc.</button> <?php } ?>
 								
 
-									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Acc. A</button>
+									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Acc.</button>
 								</div>
 							</div>
 							<div class="col-sm-5">
