@@ -38,6 +38,11 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
                 </div>
             </div>
         </div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<div class="collection_section">
     	<div class="container">
     		<h1 class="new_text"><strong>Racing Boots</strong></h1>
@@ -66,6 +71,50 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 </div>
 </div>
 
+<footer>
+	<script>
+
+	// jQuery Document
+	$(document).ready(function(){
+		//If user submits the form
+		$("#submitmsg").click(function(){	
+			var clientmsg = $("#usermsg").val();
+			$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/c/chatrooms/message.php', {text: clientmsg});				
+			$("#usermsg").attr("value", "");
+			return false;
+		});
+
+		$("#submitmsg").click(
+		function(){
+			$("#usermsg").val('');
+		});
+		
+
+		//Load the file containing the chat log
+		function loadLog(){		
+			var oldscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+			$.ajax({
+				url: 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/c/chatrooms/ROOM_<?php echo htmlspecialchars($clubid); ?>.html',
+				cache: false,
+				success: function(html){		
+					$("#chatbox").html(html); //Insert chat log into the #chatbox div				
+					var newscrollHeight = $("#chatbox").attr("scrollHeight") - 20;
+					if(newscrollHeight > oldscrollHeight){
+						$("#chatbox").animate({ scrollTop: newscrollHeight }, "normal"); //Autoscroll to bottom of div
+					}				
+				},
+			});
+		}
+		setInterval (loadLog, 300);	//Reload file every 300 ms
+		
+		//If user wants to end session
+		$("#exit").click(function(){
+			if(exit==true){window.location = 'contact.php';}		
+		});
+	});
+
+	</script>
+</footer>
 
 
 	<?php include_once($_SERVER['DOCUMENT_ROOT'].'/imports/footer.php'); ?>
