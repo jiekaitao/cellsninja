@@ -7,7 +7,7 @@
     					<div></div>
     				</div>
     				<div class="col-sm-6 col-lg-2">
-    					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(305) 555 5555</span></div>
+    					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">Watermelon</span></div>
     				</div>
     				<div class="col-sm-6 col-lg-3">
     					<div class="footer-logo"><img src="images/email-icon.png"><span class="map_text">Ms. Duran's Class</span></div>
