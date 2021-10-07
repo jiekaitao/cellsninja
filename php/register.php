@@ -4,8 +4,10 @@ if(!isset($_SESSION['user_id'])) {
 
     require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
+    $length = 4;
+
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen(4);
+    $charactersLength = strlen($length);
     $randomString = '';
     for ($i = 0; $i < $length; $i++) {
         $randomString .= $characters[rand(0, $charactersLength - 1)];
