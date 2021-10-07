@@ -22,7 +22,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 							<div class="row">
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
-								<div class="page_no">#$#$/16</div>
+								<div class="page_no">0/16</div>
 							</div>
 							<div class="col-sm-5">
 								<div class="banner_taital">
