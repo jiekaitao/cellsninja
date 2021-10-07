@@ -86,6 +86,12 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 </div>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <footer>
 	<script>
 
