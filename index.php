@@ -57,6 +57,17 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 		<br>
 		<br>
 		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 		<div class="collection_section">
     	<div class="container">
     		<h1 class="new_text"><strong>Racing Boots</strong></h1>
