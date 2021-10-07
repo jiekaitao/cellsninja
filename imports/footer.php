@@ -4,7 +4,7 @@
     		<div class="mail_section">
     			<div class="row">
     				<div class="col-sm-6 col-lg-2">
-    					<div><div class="logo" style='font-size: larger;'><h4 style="color: red;">Organelle<span style='color: gray;'>Trail</span></h4></div>
+    					<div></div>
     				</div>
     				<div class="col-sm-6 col-lg-2">
     					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(305) 555 5555</span></div>
