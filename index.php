@@ -1,5 +1,5 @@
 <?php 
-include_once('imports/header.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'imports/header.php');
 ?>
 
 
@@ -388,6 +388,10 @@ include_once('imports/header.php');
     	</div>
     </div>
    	<!-- contact section end -->
+
+
+
+	<?php include_once($_SERVER['DOCUMENT_ROOT'].'imports/footer.php'); ?>
 	<!-- section footer start -->
     <div class="section_footer">
     	<div class="container">
@@ -460,6 +464,7 @@ include_once('imports/header.php');
 	        </div>
     	</div>
     </div>
+
 	<!-- section footer end -->
 	<div class="copyright">2019 All Rights Reserved. <a href="https://html.design">Free html  Templates</a></div>
 

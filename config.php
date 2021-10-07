@@ -2,10 +2,10 @@
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
 
-$DB_SERVER = getenv('DB_HOST');
-$DB_USERNAME = getenv('DB_USER');
-$DB_PASSWORD = getenv('DB_PASSWORD');
-$DB_NAME = getenv('DB_NAME');
+$DB_SERVER = "us-cdbr-east-04.cleardb.net";
+$DB_USERNAME = "bc473ff49638ea";
+$DB_PASSWORD = "532e47c1";
+$DB_NAME = "heroku_d9cb7d06fbd7b65";
 
 $link = mysqli_connect($DB_SERVER, $DB_USERNAME, $DB_PASSWORD, $DB_NAME);
 
