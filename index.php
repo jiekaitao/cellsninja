@@ -26,7 +26,22 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 							</div>
 							<div class="col-sm-5">
 								<div class="banner_taital">
-									<h1 class="banner_text">Waiting on Players</h1>
+
+
+
+
+									<h1 class="banner_text">Waiting on Players
+
+									<div class="fade-in" style='animation-delay: 1.5s;'>
+									<span
+										class="txt-rotate"
+										data-period="2000"
+										data-rotate='[ ".", "..", "...", "...." ]'>
+									</span>
+									</div>
+									</h1>
+
+
 										<?php if(isset($_SESSION['user_id'])) { ?>
 											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
 										<?php
@@ -34,12 +49,12 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 										?>
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join Session</button>
+									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
 									<?php } else { ?> 
-									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Create Account</button> <?php } ?>
+									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">New Acc.</button> <?php } ?>
 								
 
-									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Game Account</button>
+									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Acc. A</button>
 								</div>
 							</div>
 							<div class="col-sm-5">
