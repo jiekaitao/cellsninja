@@ -4,14 +4,19 @@ if(!isset($_SESSION['user_id'])) {
 
     require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
-    $length = 4;
-
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($length);
-    $randomString = '';
-    for ($i = 0; $i < $length; $i++) {
-        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    function getUUID($length) {
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $str = '';
+      
+        for ($i = 0; $i < $length; $i++) {
+            $index = rand(0, strlen($characters) - 1);
+            $str .= $characters[$index];
+        }
+      
+        return $str;
     }
+      
+    $randomString = getUUID(6);
 
     $sql = "INSERT INTO users (user_id) VALUES (?)";
     $stmt = mysqli_prepare($link, $sql);
