@@ -1,5 +1,5 @@
 <?php 
-include_once($_SERVER['DOCUMENT_ROOT'].'imports/header.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 ?>
 
 		<div class="banner_section">
@@ -363,4 +363,4 @@ include_once($_SERVER['DOCUMENT_ROOT'].'imports/header.php');
 
 
 
-	<?php include_once($_SERVER['DOCUMENT_ROOT'].'imports/footer.php'); ?>
+	<?php include_once($_SERVER['DOCUMENT_ROOT'].'/imports/footer.php'); ?>
