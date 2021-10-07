@@ -4,13 +4,13 @@
     		<div class="mail_section">
     			<div class="row">
     				<div class="col-sm-6 col-lg-2">
-    					<div><a href="#"><img src="images/footer-logo.png"></a></div>
+    					<div><div class="logo" style='font-size: larger;'><b><h4 style="color: red;">Organelle<span style='color: gray;'>Trail</span></h4></b></div>
     				</div>
     				<div class="col-sm-6 col-lg-2">
-    					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(71) 1234567890</span></div>
+    					<div class="footer-logo"><img src="images/phone-icon.png"><span class="map_text">(305) 555 5555</span></div>
     				</div>
     				<div class="col-sm-6 col-lg-3">
-    					<div class="footer-logo"><img src="images/email-icon.png"><span class="map_text">Demo@gmail.com</span></div>
+    					<div class="footer-logo"><img src="images/email-icon.png"><span class="map_text">Ms. Duran's Class</span></div>
     				</div>
     				<div class="col-sm-6 col-lg-3">
     					<div class="social_icon">
@@ -28,14 +28,14 @@
     	    <div class="footer_section_2">
 		        <div class="row">
     		        <div class="col-sm-4 col-lg-2">
-    		        	<p class="dummy_text"> ipsum dolor sit amet, consectetur ipsum dolor sit amet, consectetur  ipsum dolor sit amet,</p>
+    		        	<p class="dummy_text">Credits to Silvana for naming "Organelle Trail" </p>
     		        </div>
     		        <div class="col-sm-4 col-lg-2">
     		        	<h2 class="shop_text">Address </h2>
-    		        	<div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">No 40 Baria Sreet 15/2 NewYork City, NY, United States.</span></div>
+    		        	<div class="image-icon"><img src="images/map-icon.png"><span class="pet_text">Riviera Puppydogs</span></div>
     		        </div>
     		        <div class="col-sm-4 col-md-6 col-lg-3">
-    				    <h2 class="shop_text">Our Company </h2>
+    				    <h2 class="shop_text">Our Prosperous Business</h2>
     				    <div class="delivery_text">
     				    	<ul>
     				    		<li>Delivery</li>
@@ -47,7 +47,7 @@
     				    </div>
     		        </div>
     			<div class="col-sm-6 col-lg-3">
-    				<h2 class="adderess_text">Products</h2>
+    				<h2 class="adderess_text">Our Epic Cellular Products</h2>
     				<div class="delivery_text">
     				    	<ul>
     				    		<li>Prices drop</li>
@@ -59,7 +59,7 @@
     				    </div>
     			</div>
     			<div class="col-sm-6 col-lg-2">
-    				<h2 class="adderess_text">Newsletter</h2>
+    				<h2 class="adderess_text">(Insert Fake Newsletter)</h2>
     				<div class="form-group">
                         <input type="text" class="enter_email" placeholder="Enter Your email" name="Name">
                     </div>
