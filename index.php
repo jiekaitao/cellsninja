@@ -31,7 +31,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 						</div>
 					</div>
 					<div class="col-sm-5">
-						<div class="shoes_img"><img src="images/running-shoes.png"></div>
+						<div class="shoes_img"><img style='border-radius: 15px;' src="images_game/index_cell.jpg"></div>
 					</div>
 				</div>
                 </div>
