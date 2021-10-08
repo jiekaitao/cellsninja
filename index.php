@@ -1,5 +1,19 @@
 <?php 
 include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
+
+
+//check if club chat room is created since last server reboot
+//if not, create one
+$templateFile5 = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/handlers/templateRoom.html');
+
+if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoom.html')) {
+    $handle = fopen($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoom.html','w+');
+    fwrite($handle, $templateFile5); 
+    fclose($handle); 
+}
+
+
+
 ?>
 
 		<div class="banner_section">
