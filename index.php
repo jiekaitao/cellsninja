@@ -39,6 +39,11 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
 								<div class="page_no">0/17</div>
+								<?php if(isset($_SESSION['user_id'])) { ?>
+											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
+								<?php
+								}
+								?>
 							</div>
 							<div class="col-sm-5">
 								<div class="banner_taital">
@@ -48,20 +53,14 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 
 									<h1 class="banner_text">Waiting on Players
 									</h1>
-
-
-										<?php if(isset($_SESSION['user_id'])) { ?>
-											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
-										<?php
-										}
-										?>
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
+
+									<?php if(isset($_SESSION['user_id'])) { ?>
+									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
 									<?php } else { ?> 
 									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> <?php } ?>
 								
-
 									<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restore.php';">Restore Acc.</button>
 								</div>
 							</div>
