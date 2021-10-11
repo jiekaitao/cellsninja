@@ -103,16 +103,7 @@ $.toast({
 
 
 
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.toast.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/isotope.pkgd.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/stickyfill.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.fancybox.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.easing.1.3.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.waypoints.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.animateNumber.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/owl.carousel.min.js"></script>
-	<script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/custom.js"></script>
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
