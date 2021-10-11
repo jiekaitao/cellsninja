@@ -78,10 +78,11 @@
 // jQuery Document
 $(document).ready(function(){
 
-	var clientmsg = <?php echo $playerCNT ?>;
-	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: clientmsg});				
+	var updatedCNT = <?php echo $playerCNT ?>;
+	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
 	
 
+	/*
 	//Load the file containing the chat log
 	function loadRoomcnt(){		
 		$.ajax({
@@ -93,6 +94,7 @@ $(document).ready(function(){
 		});
 	}
 	setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
+	*/
 	
 });
 
