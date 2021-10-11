@@ -55,7 +55,7 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 									<h1 class="banner_text">Waiting on Players
 									</h1>
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
-									<p class="lorem_text">The world-famous Organelle Trail game! (Created by Jack, Pedro, and Ryan)</p>
+									<p class="lorem_text">The world-famous Organelle Trail game! And definately not a ripoff of Oregon Trail!</p>
 									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
 									<?php } else { ?> 
 									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> <?php } ?>
