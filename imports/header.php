@@ -35,13 +35,6 @@ session_start();
       <link rel="stylesheet" href="css/jquery.toast.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/css/custom-bs.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/fonts/icomoon/style.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/fonts/line-icons/style.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/css/jquery.toast.css">
-    <link rel="stylesheet" href="https://<?php echo $_SERVER['HTTP_HOST']; ?>/css/animate.min.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
