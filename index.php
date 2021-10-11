@@ -16,9 +16,9 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 
 //get player count
 
-if(file_exists($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') && filesize($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') > 0){
-	$handle = fopen($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html', "r");
-	$contents = fread($handle, filesize($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html'));
+if(file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')){
+	$handle = fopen($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html', "r");
+	$contents = fread($handle, filesize($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html'));
 	$playerCNT = strval($contents);
 	fclose($handle);
 }
