@@ -74,7 +74,7 @@
 
 
 
-	<?php if($_SESSION['account']=="just created") { 
+<?php if($_SESSION['account']=="just created") { 
 $_SESSION['account']="null";
 ?>
 <script>
@@ -111,7 +111,7 @@ $.toast({
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
-	  <script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.toast.js"></script>
+	  <script src="js/jquery.toast.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
