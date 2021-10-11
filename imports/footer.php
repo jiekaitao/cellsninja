@@ -74,7 +74,9 @@
 
 
 
-
+<?php if($_SESSION['account']=="just created") { 
+$_SESSION['account']="null";
+?>
 <script>
 $.toast({
     text: "Success! Your new unique user ID is ( <?php echo $_SESSION['user_id']; ?> ) You can restore your game session using this code.", // Text that is to be shown in the toast
@@ -90,6 +92,7 @@ $.toast({
     loaderBg: '#9ec600',  // Background color of the toast loader
 });
 </script>
+<?php } ?>
 
 
 
