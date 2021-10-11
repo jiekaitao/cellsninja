@@ -40,6 +40,7 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
 								<div class="page_no">0/17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
+									<br>
 											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
 								<?php
 								}
