@@ -20,9 +20,9 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') &
 	$handle = fopen($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html', "r");
 	$contents = fread($handle, filesize($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html'));
 	fclose($handle);
-	
-	$playerCNT = strval($contents);
 }
+
+$playerCNT = strval($contents);
 
 if ($_SESSION['account']=="just created") {
 	++$playerCNT;
