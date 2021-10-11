@@ -78,7 +78,7 @@
 // jQuery Document
 $(document).ready(function(){
 
-	var updatedCNT = <?php echo $playerCNT ?>;
+	var updatedCNT = '<?php echo $playerCNT ?>';
 	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
 	
 
