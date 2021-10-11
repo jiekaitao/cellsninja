@@ -41,6 +41,7 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 								<div class="page_no">0/17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
 									<br>
+									<hr>
 											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
 								<?php
 								}
