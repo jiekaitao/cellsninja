@@ -141,13 +141,11 @@ if ($_SESSION['account']=="just created") {
 <script>
 
 // jQuery Document
-$(document).ready(function(){
 
 	var updatedCNT = '<?php echo $playerCNT ?>';
 	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
-	alert(
-		'teset'
-	);
+
+alert('test');
 
 	/*
 	//Load the file containing the chat log
@@ -163,8 +161,6 @@ $(document).ready(function(){
 	setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
 	*/
 	
-});
-
 </script>
 
 
