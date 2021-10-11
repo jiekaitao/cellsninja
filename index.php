@@ -2,15 +2,17 @@
 include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
 
 
-//check if club chat room is created since last server reboot
+//check if club game room count is created since last server reboot
 //if not, create one
-$templateFile5 = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/handlers/templateRoom.html');
 
-if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoom.html')) {
-    $handle = fopen($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoom.html','w+');
+$templateFile5 = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/handlers/templateRoomcnt.html');
+
+if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
+    $handle = fopen($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html','w+');
     fwrite($handle, $templateFile5); 
     fclose($handle); 
 }
+
 
 
 
@@ -65,10 +67,10 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoom.html')) {
 									<p class="lorem_text">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<?php if(isset($_SESSION['user_id'])) { ?><button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
 									<?php } else { ?> 
-									<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/php/register.php';">New Acc.</button> <?php } ?>
+									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> <?php } ?>
 								
 
-									<button class="more_bt" onclick="window.location.href = 'http://cells.ninja/restore.php';">Restore Acc.</button>
+									<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restore.php';">Restore Acc.</button>
 								</div>
 							</div>
 							<div class="col-sm-5">
