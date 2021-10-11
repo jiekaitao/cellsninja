@@ -47,14 +47,6 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 
 
 									<h1 class="banner_text">Waiting on Players
-
-									<div class="fade-in" style='animation-delay: 1.5s;'>
-									<span
-										class="txt-rotate"
-										data-period="2000"
-										data-rotate='[ ".", "..", "...", "...." ]'>
-									</span>
-									</div>
 									</h1>
 
 
