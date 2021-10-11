@@ -14,6 +14,17 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 }
 
 
+//get player count
+
+if(file_exists($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') && filesize($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') > 0){
+	$handle = fopen($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html', "r");
+	$contents = fread($handle, filesize($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html'));
+	fclose($handle);
+	
+	$playerCNT = strval($contents);
+}
+
+++$playerCNT;
 
 
 ?>
@@ -38,11 +49,12 @@ if (!file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')) {
 							<div class="row">
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
-								<div class="page_no">0/17</div>
+
+								<div class="page_no"><?php echo htmlspecialchars($playerCNT); ?>/17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
 									<br>
 									<hr>
-											You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
+									You're User ID is <?php echo htmlspecialchars($_SESSION['user_id']); ?>
 								<?php
 								}
 								?>
