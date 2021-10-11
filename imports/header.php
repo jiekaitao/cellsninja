@@ -80,7 +80,7 @@ session_start();
                         <div class="navbar-nav">
                            <a class="nav-item nav-link" href="index.php">Home</a>
                            <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
-                           <a class="nav-item nav-link" href="game.php">Game</a>
+                           <a class="nav-item nav-link" href="contact.php">Contact</a>
                            <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
                            <a class="nav-item nav-link" href="sources.php">Sources Used</a>
                            <a class="nav-item nav-link" style='opacity: 0;' href="index.php">spacingspacing</a>
