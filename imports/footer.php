@@ -73,6 +73,30 @@
 
 
 
+<script>
+
+// jQuery Document
+$(document).ready(function(){
+
+	var clientmsg = <?php echo $playerCNT ?>;
+	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: clientmsg});				
+	
+
+	//Load the file containing the chat log
+	function loadRoomcnt(){		
+		$.ajax({
+			url: 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/handlers/gameRoomcnt.html',
+			cache: false,
+			success: function(html){
+				$("#playerCNT").html(html); //Insert chat log into the #chatbox div				
+		  	},
+		});
+	}
+	setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
+	
+});
+
+</script>
 
 
 

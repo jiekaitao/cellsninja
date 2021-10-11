@@ -33,7 +33,7 @@ if(!isset($_SESSION['user_id'])) {
         $_SESSION["user_id"] = $randomString;
     }
 
-    //$_SESSION['account']="just created";
+    $_SESSION['account']="just created";
 
 }
 
