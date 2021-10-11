@@ -1,6 +1,6 @@
 <?php 
 include_once($_SERVER['DOCUMENT_ROOT'].'/imports/header.php');
-
+$playerCNT = 0;
 
 //check if club game room count is created since last server reboot
 //if not, create one
