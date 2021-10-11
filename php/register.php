@@ -33,6 +33,8 @@ if(!isset($_SESSION['user_id'])) {
         $_SESSION["user_id"] = $randomString;
     }
 
+    $_SESSION['account']="just created";
+
 }
 
 header('Location: https://'.$_SERVER["HTTP_HOST"].' ');

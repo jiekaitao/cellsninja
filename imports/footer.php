@@ -72,12 +72,46 @@
     </div>
 
 
+
+
+	<?php if($_SESSION['account']=="just created") { 
+$_SESSION['account']="null";
+?>
+<script>
+$.toast({
+  text: "Study Club does not exist with this domain!", // Text that is to be shown in the toast
+  heading: 'Note', // Optional heading to be shown on the toast
+  icon: 'error', // Type of toast icon
+  showHideTransition: 'slide', // fade, slide or plain
+  allowToastClose: true, // Boolean value true or false
+  hideAfter: 20000, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
+  stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
+  position: 'bottom-left', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
+  textAlign: 'left',  // Text alignment i.e. left, right or center
+  loader: true,  // Whether to show loader or not. True by default
+  loaderBg: '#9ec600',  // Background color of the toast loader
+});
+</script>
+<?php } ?>
+
+
+
+
+
+
+
+
+
+
+
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/jquery-3.0.0.min.js"></script>
       <script src="js/plugin.js"></script>
+	  <script src="https://<?php echo $_SERVER['HTTP_HOST']; ?>/js/jquery.toast.js"></script>
       <!-- sidebar -->
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
