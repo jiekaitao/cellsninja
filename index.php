@@ -24,7 +24,9 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'].'/c/chatrooms/ROOM_'.$clubid.'.html') &
 	$playerCNT = strval($contents);
 }
 
+if ($_SESSION['account']=="just created") {
 ++$playerCNT;
+}
 
 
 ?>
