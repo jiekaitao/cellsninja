@@ -74,7 +74,7 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>T-800 Organic Cyber Eukaryote From The Perilous Future</h2>
+                    <h2>Attack Using <?php if($_SESSION['class']=="PRO") { ?>Cytotoxins<?php } else { ?>Antimicrobiral Secretions<?php } ?></h2>
                 </div>
 
                 <div class="bl-content">
