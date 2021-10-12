@@ -33,7 +33,7 @@ $_SESSION['resets'] = $resets;
 }
 
 
-function saveData($game_step, $money, $resets){
+function saveData($link, $game_step, $money, $resets){
 	
 	$sql = "UPDATE users SET game_step = ?, money = ?, resets = ? WHERE user_id = ?";
 	$stmt = mysqli_prepare($link, $sql);
@@ -51,7 +51,7 @@ function saveData($game_step, $money, $resets){
 function checkDead(){
 	
 	if($_SESSION['money'] <= 0) {
-		die('You died. Your guts leak out and the process of lysis destroys your precious cell membrane. You did not survive the 2077 cell evolution event. :(');
+		die('You died. Your guts leak out and the process of lysis destroys your precious cell membrane. You did not survive the 2077 cell evolution event. :( Reinarcarnate by clearing your cookies!');
 	}
 
 }
