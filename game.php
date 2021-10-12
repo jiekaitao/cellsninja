@@ -67,7 +67,7 @@ function returnToGame() {
 
 	if($_SESSION['enemy_hp'] <= 0) {
 		++$_SESSION['game_step'];
-		$_SESSION['bonusATP'] = rand(80, 160);
+		$_SESSION['bonusATP'] = 1000 + rand(80, 160);
 		$_SESSION['money'] = $_SESSION['money'] + $_SESSION['bonusATP'];
 
 		$_SESSION['enemyATPincrement'] = rand(100, 160);
