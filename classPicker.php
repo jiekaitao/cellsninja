@@ -63,7 +63,7 @@
                     
                     <br>
                 <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
-</div>
+</div></div>
             </section>
 
 
