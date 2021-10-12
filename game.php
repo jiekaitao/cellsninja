@@ -1,48 +1,23 @@
 <?php 
 
 session_start();
-$_SESSION['page'] = "chatroom";
-
-// Check if the user is logged in, if not then redirect to login page.
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header('location: https://'.$_SERVER["HTTP_HOST"].'/login.php');
-    exit;
-}
-include($_SERVER['DOCUMENT_ROOT']."/imports/head.php");
-
-//Check if user is banned
-require_once($_SERVER['DOCUMENT_ROOT']."/imports/checkBanned.php");
-
 //database config/password info
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
-//sendgrind (emails)
-require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
-
-
-
-//check if user is enrolled in at least one club
-
-
-
-
-
-//1.2a 
-//variable grab (member, club_id, assoc_time, role) where user_id is 
-//2.0a
-//add variable grab where user_id is * AND domain = {domain}
-
 //clubid
-$sql = "SELECT club_id FROM clubs WHERE domain = ?";
+$sql = "SELECT game_step, money, resets FROM users WHERE user_id = ?";
 $stmt = mysqli_prepare($link, $sql);
-mysqli_stmt_bind_param($stmt, "s", $param_domain);
-$param_domain = $_SESSION['domain'];
+mysqli_stmt_bind_param($stmt, "s", $param_uuid);
+$param_uuid = $_SESSION['user_id'];
 mysqli_stmt_execute($stmt);
 mysqli_stmt_store_result($stmt);
-mysqli_stmt_bind_result($stmt, $clubid);
+mysqli_stmt_bind_result($stmt, $game_step, $money, $resets);
 mysqli_stmt_fetch($stmt);
 mysqli_stmt_close($stmt);
-$_SESSION['clubidChat'] = $clubid;
+$_SESSION['game_step'] = $game_step;
+$_SESSION['money'] = $money;
+$_SESSION['resets'] = $resets;
+
 //$_SESSION['status'] if user is supporter or not
 
 
