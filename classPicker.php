@@ -35,50 +35,14 @@
     <div class="conta">
         <div class="bl-main" id="bl-main">
             <section onclick="scheduleA()">
+
+
                 <div class="bl-box">
                     <h2>Microbot-infused Methicillin-Resistant Civilization-Ending Super Prokaryote</h2>
                 </div>
 
                 <div class="bl-content">
-                    <h2>Class Schedule (HS) <p id="demo-a"></p></h2>
 
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
-                    <br>
-                    <h1>Schedule Clock (Time until next bell ring)
-                    </h1>
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <div id="clockdiv1">
-                            <div>
-                              <span class="daysA">
-                              </span>
-                              <div class="smalltext">Days
-                              </div>
-                            </div>
-                            <div>
-                              <span class="hoursA">
-                              </span>
-                              <div class="smalltext">Hours
-                              </div>
-                            </div>
-                            <div>
-                              <span class="minutesA">
-                              </span>
-                              <div class="smalltext">Minutes
-                              </div>
-                            </div>
-                            <div>
-                              <span class="secondsA">
-                              </span>
-                              <div class="smalltext">Seconds
-                              </div>
-                            </div>
-                          </div>
-                        </div>
 
                     <p>The Microbot-infused Methicillin-Resistant Civilization-Ending Super Prokaryote is a super genetically 
                         modified super bacterium that secretes enough cytotoxins to be the primary talk of the town.
@@ -99,6 +63,7 @@
                     
                     <br>
                 <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
+</div></div></div></div>
             </section>
 
 
@@ -124,29 +89,14 @@
                             
                         <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
 
-
-
-
-
-
-                    <br>
-                    <br>
-
-
-
-                    </center>
-
-
-
-
-
-
-                    
-                    <br>
-                    <br>
-                    <br>
-                    <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
-            </section>
+                        <br>
+                        <br>
+                        </center>
+                        <br>
+                        <br>
+                        <br>
+                        <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
+                </section>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <script src="js/boxlayout.js"></script> 
