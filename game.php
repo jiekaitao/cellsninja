@@ -49,6 +49,22 @@ function checkDead(){
 
 }
 
+function returnToGame() {
+
+	checkDead();
+
+	$_SESSION['money'] = $_SESSION['money'] + $_SESSION['recovery'] - $_SESSION['energy_expended'] - $_SESSION['dmg_receieved'];
+	$_SESSION['enemy_hp'] = $_SESSION['enemy_hp'] - $_SESSION['damage'];
+
+	if($_SESSION['enemy_hp'] <= 0) {
+		++$_SESSION['game_step'];
+	}
+	
+	$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
+	exit();
+}
+
 if ($_SESSION['game_step'] == 0) {
 	//Step 0, user is fresh
 	//redirect to class picker
@@ -62,7 +78,7 @@ if ($_SESSION['game_step'] == 0) {
 	$_SESSION['game_step'] = 1;
 	$_SESSION['enemy_hp'] = 1000;
 	$_SESSION['money'] = 700;
-	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
 	} elseif ($_GET['choice']==2) {
 	//chose eukaryote
@@ -70,7 +86,7 @@ if ($_SESSION['game_step'] == 0) {
 	$_SESSION['game_step'] = 1;
 	$_SESSION['enemy_hp'] = 1000;
 	$_SESSION['money'] = 1000;
-	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
 	} else {
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
@@ -80,7 +96,7 @@ if ($_SESSION['game_step'] == 0) {
 }
 
 
-if ($_SESSION['game_step'] == 1) {
+if ($_SESSION['game_step'] > 0) {
 	//Step 1, user finished picking fight against girus
 	//redirect to picker if needed
 
@@ -99,23 +115,19 @@ if ($_SESSION['game_step'] == 1) {
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
 					$_SESSION['damage'] = 450;
-					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-					exit();
+					returnToGame();
 				} else {
 					$_SESSION['damage'] = 0;
-					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-					exit();
-				}
+					returnToGame();
+				}	
 			} else {
 				if($rng > 5) {
 					$_SESSION['damage'] = 200;
-					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-					exit();
+					returnToGame();
 				} else {
 					$_SESSION['damage'] = 200;
 					$_SESSION['recovery'] = $_SESSION['dmg_receieved'] / 2;
-					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-					exit();
+					returnToGame();
 				}
 			}
 
@@ -128,14 +140,12 @@ if ($_SESSION['game_step'] == 1) {
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
 					$_SESSION['recovery'] = 200;
-					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-					exit();
+					returnToGame();
 				}
 			} else {
 				$_SESSION['dmg_receieved'] = 0;
 				$_SESSION['energy_expended'] = $_SESSION['energy_expended'] + 40;
-				header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
-				exit();
+				returnToGame();
 			}
 
 
@@ -145,7 +155,7 @@ if ($_SESSION['game_step'] == 1) {
 
 
 		} else {
-		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 		exit();
 		}
 	} else {

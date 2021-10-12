@@ -109,15 +109,15 @@
 
 
 <span style='margin-right: 15px;'>
-<h2>Scenario 1</h2>
+<h2>Scenario 2</h2>
 <br>
-<h1>Asteroid Impact
+<h1>Spring Overturn Competition
     <br>
     <br>
-    <p>Halley's comet in 2061 hits the planet. A significant amount of outer space giruses landed on Earth. You encounter a particularly buff mimivirus that wants to infect the amoeba sisters that you are fond with. The girus uses receptor mediated endocytosis to in an attempt to infect your favorite amoeba sister, Pinky. </p>
+    <p>In the year 2069, humans blew themselves up, the doomsday clock is beyond 12, and the season’s spring overturn has been reached. As nutrients and oxygen that previously settled on the surface of a frozen lake falls, bottom-dwelling bacteria rises to the surface. In this competitive environment you find a buff bacteria that you are competing against for the copious amount of resources. </p>
     <br>
     <br>
-    <p>You take swift action to save the Biology demi-god.</p>
+    <p>You must think fast to succeed in this environment.</p>
     <br>
     <br>
     <br>
