@@ -76,7 +76,7 @@ if ($_SESSION['game_step'] == 0) {
 	//chose prokaryote
 	$_SESSION['class'] = "PRO";
 	$_SESSION['game_step'] = 1;
-	$_SESSION['enemy_hp'] = 1000;
+	$_SESSION['enemy_hp'] = 3000;
 	$_SESSION['money'] = 700;
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
@@ -84,7 +84,7 @@ if ($_SESSION['game_step'] == 0) {
 	//chose eukaryote
 	$_SESSION['class'] = "EUK";
 	$_SESSION['game_step'] = 1;
-	$_SESSION['enemy_hp'] = 1000;
+	$_SESSION['enemy_hp'] = 3000;
 	$_SESSION['money'] = 1000;
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
