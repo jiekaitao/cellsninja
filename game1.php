@@ -107,7 +107,7 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>T-800 Organic Cyber Eukaryote From The Perilous Future</h2>
+                    <h2>Avoid Conflict</h2>
                 </div>
 
                 <div class="bl-content">
