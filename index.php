@@ -144,12 +144,16 @@ if ($_SESSION['account']=="just created") {
 // jQuery Document
 
 window.onload = function() {
+
+<?php if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") { 
+	$_SESSION['updater']="done";
+	?>
 var updatedCNT = '<?php echo $playerCNT ?>';
 $.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
 }
+<?php } ?>
 
-
-	/*
+	
 	//Load the file containing the chat log
 	function loadRoomcnt(){		
 		$.ajax({
@@ -161,7 +165,7 @@ $.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updat
 		});
 	}
 	setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
-	*/
+	
 	
 </script>
 
