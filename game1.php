@@ -64,12 +64,13 @@
                 </div>
 
                 <div class="bl-content">
-                    <h2>Class Schedule (MS) <p id="demo-b"></p></h2>
+                    <h2>Attack Using <?php if($_SESSION['class']=="PRO") { ?>Cytotoxins<?php } else { ?>Antimicrobiral Secretions<?php } ?></h2>
 
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
+                    <p><?php if($_SESSION['class']=="PRO") { ?>
+                        CYTOTOXINS: 50% chance of hitting, 48% chance of missing 2% chance the opponent builds total immunity and instantly kills you. Deals 300 damage if cytotoxins are effective.
+                    <?php } else { ?>
+                        Antimicrobial Secretions: 50% chance of hitting, 50% chance of hitting but taking (reduced) damage 
+                        <?php } ?></p>
                     <br>
                     <br>
                     <br>
@@ -86,10 +87,11 @@
                     <h2>Avoid Conflict</h2>
 
                     <p><?php if($_SESSION['class']=="PRO") { ?>
-                        50% chance of recovering 200 ATP
-                    <br>50% of failing and just taking damage
+                        MICROBIRAL CYST: 50% chance of recovering 200 ATP. 50% of failing and just taking damage
                     <?php } else { ?>
-                        CELL WALL: Take zero damage, expend 40 extra ATP this round<?php } ?></p>
+                        CELL WALL: Take zero damage, expend 40 extra ATP this round
+                        <?php } ?></p>
+
                     <br>
                     <br>
                     <br>
