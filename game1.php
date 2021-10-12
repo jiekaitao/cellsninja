@@ -12,7 +12,7 @@
 
 
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bell Ninja - A Simple Timer
+    <title>Organelle Trail
     </title>
     <meta name="description" content="A simple answer to a constant question. When is the class bell going to ring?">
 
