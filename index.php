@@ -119,7 +119,7 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
     				</div>
     				<div class="col-md-4">
     					<div class="sale_text"><strong>Fight!<br><span style="color: #0a0506;">Win!</span> <br>Live!</strong></div>
-    					<div class="number_text"><strong>$ <span style="color: #0a0506">100</span></strong></div>
+    					<div class="number_text"><strong>ATP <span style="color: #0a0506">5,000,000</span></strong></div>
     					<button class="seemore">See More</button>
     				</div>
     			</div>
