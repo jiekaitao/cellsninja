@@ -49,14 +49,24 @@ function checkDead($game_step, $money, $resets){
 
 }
 
-if($game_step == 0) {
-//Step 0, user is fresh
-//redirect to class picker
-$_SESSION['game_step'] = $game_step;
-$_SESSION['money'] = 1000;
-$_SESSION['resets'] = $resets;
+if ($_SESSION['game_step'] == 0) {
+	//Step 0, user is fresh
+	//redirect to class picker
+	$_SESSION['game_step'] = $game_step;
+	$_SESSION['money'] = 1000;
+	$_SESSION['resets'] = $resets;
 
-header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
-exit();
+	if ($_GET['choice']==1) {
+	//chose prokaryote
+	$_SESSION['class'] = "PRO";
+	$_SESSION['game_step'] = 1;
+	} elseif ($_GET['choice']==2) {
+	//chose eukaryote
+	$_SESSION['class'] = "EUK";
+	$_SESSION['game_step'] = 1;
+	} else {
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
+	exit();
+	}
+
 }
-
