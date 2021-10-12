@@ -33,23 +33,9 @@ function saveData($game_step, $money, $resets){
 	$param_resets = $_SESSION['resets'];
 	$param_user_id = $_SESSION['user_id'];
 
+	mysqli_stmt_execute($stmt);
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 if($game_step == 0) {
 //Step 0, user is fresh
@@ -58,7 +44,7 @@ $_SESSION['game_step'] = $game_step;
 $_SESSION['money'] = 1000;
 $_SESSION['resets'] = $resets;
 
-header("Location: f");
+header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
 exit();
 }
 
