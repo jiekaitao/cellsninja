@@ -160,7 +160,8 @@ if ($_SESSION['game_step'] > 0) {
 		}
 	} else {
 		//header('Location: https://'.$_SERVER["HTTP_HOST"].'/game2.php');
-		die("you won!");
+		//die("you won. The enemy's hp is (or rather, was) ".$_SESSION['enemy_hp']."");
+		returnToGame();
 		exit();
 	}
 }
