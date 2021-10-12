@@ -60,7 +60,7 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>Middle School Schedule</h2>
+                    <h2>Attack Using <?php if($_SESSION['class']=="PRO") { ?>Cytotoxins<?php } else { ?>Antimicrobiral Secretions<?php } ?></h2>
                 </div>
 
                 <div class="bl-content">
@@ -85,9 +85,12 @@
                 <div class="bl-content">
                     <h2>Avoid Conflict</h2>
 
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
+                    <p><?php if($_SESSION['class']=="PRO") { ?>
+                        50% chance of recovering 200 ATP
+                    <br>50% of failing and just taking damage
+                    <?php } else { ?>
+                        CELL WALL: Take zero damage, expend 40 extra ATP this round<?php } ?></p>
                     <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
                     <br>
                     <br>
                     <br>
