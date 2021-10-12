@@ -61,7 +61,7 @@ details > summary::-webkit-details-marker {
 
 
 <body>
-  <h1>Class Info: Prokaryote</h1>
+  <h1>Class Info: Eukaryote</h1>
   <main>
   <br>
 
