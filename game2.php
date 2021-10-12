@@ -1,3 +1,6 @@
+<?php session_start(); ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -121,7 +124,7 @@
     <br>
     <br>
     <br>
-    <?php if (isset($_SESSION['temp_message'])) { echo htmlspecialchars($_SESSION["temp_message"]); } ?>
+    <?php echo htmlspecialchars($_SESSION['temp_message']); ?>
     <br>
 </h1>
 <br>
