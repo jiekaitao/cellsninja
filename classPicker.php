@@ -80,7 +80,6 @@
                           </div>
                         </div>
 
-<<<<<<< HEAD
                     <p>The Microbot-infused Methicillin-Resistant Civilization-Ending Super Prokaryote is a super genetically 
                         modified super bacterium that secretes enough cytotoxins to be the primary talk of the town.
                         <br>
@@ -89,86 +88,9 @@
                         <br>
                         <br>
                         <a href='https://cells.ninja/game.php?choice=1'>> Confirm Selection</a>
-=======
->>>>>>> parent of 6a9e304 (Update classPicker.php)
                         <br>
                         <br>
                         
-
-                    <div style="font-size: 0.5; opacity: 0.55;">
-
-                        <p id="demo3-a">
-                        </p>
-                        <p id="demo4-a" style='margin-top: -80px;'>
-                        </p>
-                        <p id="demo2-a" style='visibility: hidden;'>
-                        </p>
-                    </div>
-                        </div>
-                      </div>
-                    <br>
-                    <br>
-
-
-
-
-
-
-
-                    <p id="sadface" style="font-size: 15px; color: brown;"></p>
-                    <p id="happyface" style="font-size: 10px; color: gray;"></p>
-
-                                        <!-- rectangular ad -->
-                    <div style="opacity: 0.6;" id="wrapfabtest">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8825503060131060"
-                        crossorigin="anonymous"></script>
-                    <!-- bell-ninja -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-8825503060131060"
-                        data-ad-slot="2795647869"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                    </div>
-                    
-                    <p id="sadface" style="font-size: 15px; color: brown;"></p>
-                    <p id="happyface" style="font-size: 10px; color: gray;"></p>
-                    <script
-                            src="https://code.jquery.com/jquery-3.4.1.js"
-                            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                            crossorigin="anonymous"></script>
-                    <script>
-                    $(document).ready(function(){
-                        if($("#wrapfabtest").height() > 0) {
-                            document.getElementById("happyface").innerHTML = "Thanks for being an ad supporter!";
-                            $.ajax({  
-                        type: 'POST',  
-                        url: 'null',
-                        data: { adblock: 'false' },
-                        success: function(data) {
-                    
-                        }
-                    });
-                            
-                        } else {
-                            document.getElementById("sadface").innerHTML = "Hi user! This website costs exactly $8.51 USD per month to run. (Additional revenue will go to charity.) <br>Running ads helps cover the cost of keeping this online. Please consider <br>disabling AdBlocker on this website. Thank you :)<br><br><br>";
-                            $.ajax({  
-                        type: 'POST',  
-                        url: 'null',
-                        data: { adblock: 'true' },
-                        success: function(data) {
-                    
-                        }
-                    });
-                        
-                        }
-                    });
-                    </script>
-                    </center>
-
 
 
 
@@ -195,7 +117,7 @@
                         Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
                         <br>
                         <br>
-                        <a href='https://cells.ninja/game.php?choice=1'>Confirm Selection</a>
+                        <a href='https://cells.ninja/game.php?choice=2'>Confirm Selection</a>
                         <br>
                         <br>
                         <em>
