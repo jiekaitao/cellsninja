@@ -187,7 +187,7 @@
                         <br>
                         <em>
                             
-                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:500px;" title="description"></iframe>
+                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
 
 
 
