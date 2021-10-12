@@ -40,136 +40,32 @@
                 </div>
 
                 <div class="bl-content">
-                    <h2>Class Schedule (HS) <p id="demo-a"></p></h2>
+                    <h2>Prokaryote Class </h2>
 
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
-                    <br>
-                    <h1>Schedule Clock (Time until next bell ring)
-                    </h1>
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <div id="clockdiv1">
-                            <div>
-                              <span class="daysA">
-                              </span>
-                              <div class="smalltext">Days
-                              </div>
-                            </div>
-                            <div>
-                              <span class="hoursA">
-                              </span>
-                              <div class="smalltext">Hours
-                              </div>
-                            </div>
-                            <div>
-                              <span class="minutesA">
-                              </span>
-                              <div class="smalltext">Minutes
-                              </div>
-                            </div>
-                            <div>
-                              <span class="secondsA">
-                              </span>
-                              <div class="smalltext">Seconds
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
+                    <p>The T-800 Organic Cyber Eukaryote From The Perilous Future is a super genetically 
+                        modified plant cell that contains an unnatural amount of chloroplasts and mitochondria.
                         <br>
                         <br>
-                        
-
-                    <div style="font-size: 0.5; opacity: 0.55;">
-
-                        <p id="demo3-a">
-                        </p>
-                        <p id="demo4-a" style='margin-top: -80px;'>
-                        </p>
-                        <p id="demo2-a" style='visibility: hidden;'>
-                        </p>
-                    </div>
-                        </div>
-                      </div>
-                    <br>
-                    <br>
-
-
-
-
-
-
-
-                    <p id="sadface" style="font-size: 15px; color: brown;"></p>
-                    <p id="happyface" style="font-size: 10px; color: gray;"></p>
-
-                                        <!-- rectangular ad -->
-                    <div style="opacity: 0.6;" id="wrapfabtest">
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8825503060131060"
-                        crossorigin="anonymous"></script>
-                    <!-- bell-ninja -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-8825503060131060"
-                        data-ad-slot="2795647869"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                    </div>
-                    
-                    <p id="sadface" style="font-size: 15px; color: brown;"></p>
-                    <p id="happyface" style="font-size: 10px; color: gray;"></p>
-                    <script
-                            src="https://code.jquery.com/jquery-3.4.1.js"
-                            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-                            crossorigin="anonymous"></script>
-                    <script>
-                    $(document).ready(function(){
-                        if($("#wrapfabtest").height() > 0) {
-                            document.getElementById("happyface").innerHTML = "Thanks for being an ad supporter!";
-                            $.ajax({  
-                        type: 'POST',  
-                        url: 'null',
-                        data: { adblock: 'false' },
-                        success: function(data) {
-                    
-                        }
-                    });
+                        Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
+                        <br>
+                        <br>
+                        <a href='https://cells.ninja/game.php?choice=1'>> Confirm Selection</a>
+                        <br>
+                        <br>
+                        <em>
                             
-                        } else {
-                            document.getElementById("sadface").innerHTML = "Hi user! This website costs exactly $8.51 USD per month to run. (Additional revenue will go to charity.) <br>Running ads helps cover the cost of keeping this online. Please consider <br>disabling AdBlocker on this website. Thank you :)<br><br><br>";
-                            $.ajax({  
-                        type: 'POST',  
-                        url: 'null',
-                        data: { adblock: 'true' },
-                        success: function(data) {
-                    
-                        }
-                    });
-                        
-                        }
-                    });
-                    </script>
-                    </center>
-
-
-
-
-
-
-                    
+                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
                     <br>
-                <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
+                    <br>
+                    </center>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
             </section>
 
 
-            <section onclick="scheduleB()">
+            <section>
                 <div class="bl-box">
                     <h2>T-800 Organic Cyber Eukaryote From The Perilous Future</h2>
                 </div>
@@ -184,31 +80,15 @@
                         Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
                         <br>
                         <br>
-                        <a href='https://cells.ninja/game.php?choice=1'>Confirm Selection</a>
+                        <a href='https://cells.ninja/game.php?choice=1'>> Confirm Selection</a>
                         <br>
                         <br>
                         <em>
                             
-                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
-
-
-
-
-
-
+                        <iframe src="https://cells.ninja/classEukaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
                     <br>
                     <br>
-
-
-
                     </center>
-
-
-
-
-
-
-                    
                     <br>
                     <br>
                     <br>
