@@ -76,8 +76,9 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 										<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
 										<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restart.php';">Restart Acc.</button>
 									<?php } else { ?> 
-									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> <?php } ?>
+									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> 
 									<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restore.php';">Restore Acc.</button>
+									<?php } ?>
 								</div>
 							</div>
 							<div class="col-sm-5">
