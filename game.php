@@ -1,8 +1,12 @@
 <?php 
-
 session_start();
 //database config/password info
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
+
+
+$temp_message = "";
+$enemy_hp = "";
+
 
 if(!isset($_SESSION['game_step'])) {
 //initial get vars
