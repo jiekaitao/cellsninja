@@ -36,7 +36,7 @@
         <div class="bl-main" id="bl-main">
             <section onclick="scheduleA()">
                 <div class="bl-box">
-                    <h2>High School Schedule</h2>
+                    <h2>Robo-Prokaryote</h2>
                 </div>
 
                 <div class="bl-content">
@@ -171,7 +171,7 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>Middle School Schedule</h2>
+                    <h2>T-800 Organic Cyber Eukaryote </h2>
                 </div>
 
                 <div class="bl-content">
