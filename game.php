@@ -63,7 +63,8 @@ function returnToGame() {
 
 	if($_SESSION['enemy_hp'] <= 0) {
 		++$_SESSION['game_step'];
-		$_SESSION['money'] = $_SESSION['money'] + 1000;
+		$_SESSION['bonusATP'] = rand(80, 160);
+		$_SESSION['money'] = $_SESSION['money'] + $_SESSION['bonusATP'];
 		$_SESSION['specialMSG'] = true;
 	}
 	
@@ -71,7 +72,7 @@ function returnToGame() {
 
 	if($_SESSION['specialMSG']==true) {
 		$_SESSION['specialMSG']=false;
-		$_SESSION['temp_message'] = "You successfully beat your opponent and you have now progressed to the next stage. You absorbed 1000 ATP points from defeating your opponent. You now have ".$_SESSION['money']."";
+		$_SESSION['temp_message'] = "You successfully beat your opponent and you have now progressed to the next stage. You absorbed ".$_SESSION['bonusATP']." ATP points from defeating your opponent. You now have ".$_SESSION['money']." ATP";
 	}
 	checkDead();
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
