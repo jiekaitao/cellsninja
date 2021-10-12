@@ -58,7 +58,7 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 									<?php } else { ?>
 									<span id='playerCNT'></span>
 									<?php } ?>
-									/17</div>
+									/ 17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
 									<br>
 									<hr>
