@@ -187,17 +187,17 @@
                         <br>
 
                         <div class="dropdown">
-                        <span>Mouse over me</span>
+                        <span>Cell Wall</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>Hello World!</p>
+                        <p style='color: red; font-size: 15px;'>Provides extra protection to eukaryotic cells. This is an upgrade to the Cell membrane, as it attaches itself to the outside of the membrane.</p>
                         </div>
                         </div>
                         <br>
                         <br>
                         <div class="dropdown">
-                        <span>Mouse over me</span>
+                        <span>Cell Membrane</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>Hello World!</p>
+                        <p style='color: red; font-size: 15px;'>The most basic form of protection in cells remains semi-permeable to allow vital materials to pass through itself in order to provide the cell with the materials critical to its survival.</p>
                         </div>
                         </div>
                         <br>
