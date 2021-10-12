@@ -24,9 +24,9 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'].'/handlers/gameRoomcnt.html')){
 }
 
 
-/*if ($_SESSION['account']=="just created") {
+if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 	++$playerCNT;
-} */
+} 
 
 
 ?>
