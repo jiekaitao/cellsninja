@@ -76,7 +76,7 @@ function returnToGame() {
 		$_SESSION['specialMSG'] = true;
 	}
 	
-	if($_SESSION['choice']==3) {
+	if($_GET['choice']==3) {
 		$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." ATP. The enemy dealt ".$_SESSION['dmg_receieved']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
 	} else {
 		$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." ATP. The enemy dealt ".$_SESSION['dmg_receieved']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You chose to defend, so you didn't inflict damage. The enemy still has ".$_SESSION['enemy_hp']." ATP remaining.";
