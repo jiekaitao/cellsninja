@@ -55,7 +55,7 @@
                         <br>
                         <br>
                         
-                        <iframe src="https://cells.ninja/classEukaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
+                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
 
 
 
@@ -190,15 +190,6 @@
 function openLunch() {
     window.open('https://www.sagedining.com/menus/rivieraday','popup','width=600,height=600'); 
     return false;
-}
-
-var ua = navigator.userAgent.toLowerCase(); 
-if (ua.indexOf('safari') != -1) { 
-  if (ua.indexOf('chrome') > -1) {
-    console.log("Yay, you're using Chrome! :)");
-  } else {
-    alert("Hey there! Safari is known to not work with Bell Ninja very well. Please use this website on your tablet with Google Chrome. Thankss!") // Safari
-  }
 }
 
 
