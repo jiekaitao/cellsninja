@@ -6,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
 $_SESSION['temp_message'] = "";
 $_SESSION['enemy_hp'] = "";
-
+$_SESSION['energy_expended'] = 80;
 
 if(!isset($_SESSION['game_step'])) {
 //initial get vars
@@ -123,13 +123,14 @@ if ($_SESSION['game_step'] == 1) {
 				}
 			} else {
 				$_SESSION['dmg_receieved'] = 0;
+				$_SESSION['energy_expended'] = $_SESSION['energy_expended'] + 40;
 			}
 
 
 
 
 
-			
+
 
 		} else {
 		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
