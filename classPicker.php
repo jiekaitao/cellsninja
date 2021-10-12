@@ -182,7 +182,9 @@
                         <br>
                         <br>
                         Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
-
+                        <br>
+                        <br>
+                        <a href='https://cells.ninja/game.php?choice=1'>Confirm Selection</a>
                         <br>
                         <br>
                         <em>
