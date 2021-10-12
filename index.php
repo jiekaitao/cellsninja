@@ -143,8 +143,8 @@ alert('test');
 
 // jQuery Document
 
-	var updatedCNT = '<?php echo $playerCNT ?>';
-	$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
+//var updatedCNT = '<?php echo $playerCNT ?>';
+//$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
 
 alert('test');
 
