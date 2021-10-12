@@ -5,7 +5,7 @@ session_start();
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
 if(!isset($_SESSION['game_step'])) {
-//clubid
+//initial get vars
 $sql = "SELECT game_step, money, resets FROM users WHERE user_id = ?";
 $stmt = mysqli_prepare($link, $sql);
 mysqli_stmt_bind_param($stmt, "s", $param_uuid);
@@ -21,11 +21,44 @@ $_SESSION['money'] = $money;
 $_SESSION['resets'] = $resets;
 }
 
+
+function saveData($game_step, $money, $resets){
+	
+	$sql = "UPDATE users SET game_step = ?, money = ?, resets = ? WHERE user_id = ?";
+	$stmt = mysqli_prepare($link, $sql);
+	mysqli_stmt_bind_param($stmt, "iiis", $param_game_step, $param_money, $param_resets, $param_user_id);
+	
+	$param_game_step = $_SESSION['game_step'];
+	$param_money = $_SESSION['money'];
+	$param_resets = $_SESSION['resets'];
+	$param_user_id = $_SESSION['user_id'];
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if($game_step == 0) {
 //Step 0, user is fresh
+//redirect to class picker
 $_SESSION['game_step'] = $game_step;
-$_SESSION['money'] = 0;
+$_SESSION['money'] = 1000;
 $_SESSION['resets'] = $resets;
 
+header("Location: f");
+exit();
 }
 
