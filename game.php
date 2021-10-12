@@ -54,7 +54,7 @@ function returnToGame() {
 	checkDead();
 
 	$_SESSION['money'] = $_SESSION['money'] + $_SESSION['recovery'] - $_SESSION['energy_expended'] - $_SESSION['dmg_receieved'];
-	$_SESSION['enemy_hp'] = $_SESSION['enemy_hp'] - $_SESSION['damage'];
+	if($_GET['choice']==3) { $_SESSION['enemy_hp'] = $_SESSION['enemy_hp'] - $_SESSION['damage']; }
 
 	if($_SESSION['enemy_hp'] <= 0) {
 		++$_SESSION['game_step'];
@@ -97,6 +97,7 @@ if ($_SESSION['game_step'] == 0) {
 
 
 if ($_SESSION['game_step'] > 0) {
+	$_SESSION['recovery'] = 0;
 	//Step 1, user finished picking fight against girus
 	//redirect to picker if needed
 
