@@ -102,7 +102,7 @@ if ($_SESSION['game_step'] > 0) {
 
 	if($_SESSION['enemy_hp'] > 0) {
 		$rng = rand(1, 10);
-		$_SESSION['dmg_receieved'] = rand(100, 300);
+		$_SESSION['dmg_receieved'] = rand(50, 195);
 
 
 
