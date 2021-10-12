@@ -79,11 +79,11 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>Middle School Schedule</h2>
+                    <h2>Avoid Conflict</h2>
                 </div>
 
                 <div class="bl-content">
-                    <h2>Class Schedule (MS) <p id="demo-b"></p></h2>
+                    <h2>Avoid Conflict</h2>
 
                     <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
                     <br>
@@ -112,9 +112,11 @@
     <br>
     <p>You take swift action to save the Biology demi-god.</p>
     <br>
+    <br>
+    <br>
+    You have <?php echo htmlspecialchars($_SESSION['money']); ?> ATP. (You lose at 0)
 </h1>
 <br>
-<p></p>
 <br>
 <br>
 </span>
