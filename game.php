@@ -3,9 +3,6 @@ session_start();
 //database config/password info
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
-if($_GET['choice']==4) {
-	die("You won! If you would to play again, please clear your cookies.");
-}
 
 $_SESSION['temp_message'] = "";
 $_SESSION['energy_expended'] = 80;
@@ -16,6 +13,10 @@ if($_SESSION['game_step']==2) {
 
 if($_SESSION['game_step']==3) {
 	$_SESSION['energy_expended'] = 120;
+}
+
+if($_SESSION['game_step']==4) {
+	die("You won! If you would to play again, please clear your cookies.");
 }
 
 if(!isset($_SESSION['game_step'])) {
@@ -161,7 +162,9 @@ if ($_SESSION['game_step'] > 0) {
 				if($rng > 5) {
 					$_SESSION['recovery'] = 300;
 					returnToGame();
-				}
+				} else {
+					returnToGame();
+				} 
 			} else {
 				$_SESSION['dmg_receieved'] = 0;
 				$_SESSION['energy_expended'] = $_SESSION['energy_expended'] + 40;
