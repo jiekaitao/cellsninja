@@ -98,44 +98,6 @@
 
 
 
-            <section onclick="scheduleB()">
-                <div class="bl-box">
-                    <h2>Middle School Schedule</h2>
-                </div>
-
-                <div class="bl-content">
-                    <h2>Class Schedule (MS) <p id="demo-b"></p></h2>
-
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
-            </section>
-
-
-
-            <section onclick="scheduleB()">
-                <div class="bl-box">
-                    <h2>Middle School Schedule</h2>
-                </div>
-
-                <div class="bl-content">
-                    <h2>Class Schedule (MS) <p id="demo-b"></p></h2>
-
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
-            </section>
-
 <section style="background-color: #333; margin-left: 15px; margin-right: 15px; font-size: 85%; overflow: hidden;">
 
 
