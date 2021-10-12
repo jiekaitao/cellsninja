@@ -140,23 +140,14 @@ if ($_SESSION['account']=="just created") {
 
 <script>
 
-window.onload = function() {
-    if (window.jQuery) {  
-        // jQuery is loaded  
-        alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-    }
-}
-alert('test');
 
 // jQuery Document
 
-//var updatedCNT = '<?php echo $playerCNT ?>';
-//$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
+window.onload = function() {
+var updatedCNT = '<?php echo $playerCNT ?>';
+$.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updatePlayers.php', {text: updatedCNT});				
+}
 
-alert('test');
 
 	/*
 	//Load the file containing the chat log
