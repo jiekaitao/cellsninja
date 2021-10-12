@@ -189,7 +189,7 @@
                         <div class="dropdown">
                         <span>Mouse over me</span>
                         <div class="dropdown-content">
-                        <p>Hello World!</p>
+                        <p style='color: red;'>Hello World!</p>
                         </div>
                         </div>
                     <br>
