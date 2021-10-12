@@ -99,15 +99,23 @@ if ($_SESSION['game_step'] == 1) {
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
 					$_SESSION['damage'] = 450;
+					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+					exit();
 				} else {
 					$_SESSION['damage'] = 0;
+					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+					exit();
 				}
 			} else {
 				if($rng > 5) {
 					$_SESSION['damage'] = 200;
+					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+					exit();
 				} else {
 					$_SESSION['damage'] = 200;
 					$_SESSION['recovery'] = $_SESSION['dmg_receieved'] / 2;
+					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+					exit();
 				}
 			}
 
@@ -120,10 +128,14 @@ if ($_SESSION['game_step'] == 1) {
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
 					$_SESSION['recovery'] = 200;
+					header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+					exit();
 				}
 			} else {
 				$_SESSION['dmg_receieved'] = 0;
 				$_SESSION['energy_expended'] = $_SESSION['energy_expended'] + 40;
+				header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+				exit();
 			}
 
 
