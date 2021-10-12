@@ -4,8 +4,8 @@ session_start();
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
 
-$temp_message = "";
-$enemy_hp = "";
+$_SESSION['temp_message'] = "";
+$_SESSION['enemy_hp'] = "";
 
 
 if(!isset($_SESSION['game_step'])) {
@@ -41,15 +41,11 @@ function saveData($game_step, $money, $resets){
 
 }
 
-function checkDead($game_step, $money, $resets){
+function checkDead(){
 	
-	$sql = "UPDATE users SET game_step = ?, money = ?, resets = ? WHERE user_id = ?";
-	$stmt = mysqli_prepare($link, $sql);
-	mysqli_stmt_bind_param($stmt, "iiis", $param_game_step, $param_money, $param_resets, $param_user_id);
-	
-	$param_game_step = $_SESSION['game_step'];
-
-	mysqli_stmt_execute($stmt);
+	if($_SESSION['money'] <= 0) {
+		die('You died :(');
+	}
 
 }
 
@@ -64,13 +60,57 @@ if ($_SESSION['game_step'] == 0) {
 	//chose prokaryote
 	$_SESSION['class'] = "PRO";
 	$_SESSION['game_step'] = 1;
+	$_SESSION['enemy_hp'] = 1000;
+	$_SESSION['money'] = 700;
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+	exit();
 	} elseif ($_GET['choice']==2) {
 	//chose eukaryote
 	$_SESSION['class'] = "EUK";
 	$_SESSION['game_step'] = 1;
+	$_SESSION['enemy_hp'] = 1000;
+	$_SESSION['money'] = 1000;
+	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
+	exit();
 	} else {
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
 	exit();
 	}
 
+}
+
+
+if ($_SESSION['game_step'] == 1) {
+	//Step 1, user finished picking fight against girus
+	//redirect to picker if needed
+
+	if($_SESSION['enemy_hp'] > 0) {
+		if ($_GET['choice']==3) {
+		//chose attack
+		checkDead();
+		$rng = rand(1, 10);
+
+			if($_SESSION['class'] == "PRO") {
+				$damage = $rng 
+			} else {
+
+			}
+
+		} elseif ($_GET['choice']==4) {
+
+			if($_SESSION['class'] == "PRO") {
+
+			} else {
+
+			}
+
+
+		} else {
+		header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
+		exit();
+		}
+	} else {
+		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game2.php');
+		exit();
+	}
 }

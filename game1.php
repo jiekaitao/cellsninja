@@ -73,6 +73,7 @@
                         <?php } ?></p>
                     <br>
                     <br>
+                    <a href='https://cells.ninja/game.php?choice=3'>> Confirm Selection</a>
                     <br>
                     <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
             </section>
@@ -95,6 +96,7 @@
                     <br>
                     <br>
                     <br>
+                    <a href='https://cells.ninja/game.php?choice=4'>> Confirm Selection</a>
                     <br>
                     <br>
                     <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
