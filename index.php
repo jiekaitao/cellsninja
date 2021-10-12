@@ -139,6 +139,7 @@ if ($_SESSION['account']=="just created") {
 
 
 <script>
+alert('test');
 
 // jQuery Document
 
