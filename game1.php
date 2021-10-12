@@ -38,7 +38,7 @@
 
 
                 <div class="bl-box">
-                    <h2>Microbot-infused Methicillin-Resistant Civilization-Ending Super Prokaryote</h2>
+                    <h2>Attack Using <?php if($_SESSION['class']=="PRO") { ?>Cytotoxins<?php } else { ?>Antimicrobiral Secretions<?php } ?></h2>
                 </div>
 
                 <div class="bl-content">
@@ -74,39 +74,6 @@
 
             <section onclick="scheduleB()">
                 <div class="bl-box">
-                    <h2>Attack Using <?php if($_SESSION['class']=="PRO") { ?>Cytotoxins<?php } else { ?>Antimicrobiral Secretions<?php } ?></h2>
-                </div>
-
-                <div class="bl-content">
-                    <h2>Eukaryote Class </h2>
-
-                    <p>The T-800 Organic Cyber Eukaryote From The Perilous Future is a super genetically 
-                        modified plant cell that contains an unnatural amount of chloroplasts and mitochondria.
-                        <br>
-                        <br>
-                        Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
-                        <br>
-                        <br>
-                        <a href='https://cells.ninja/game.php?choice=2'>Confirm Selection</a>
-                        <br>
-                        <br>
-                        <em>
-                            
-                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
-
-                        <br>
-                        <br>
-                        </center>
-                        <br>
-                        <br>
-                        <br>
-                        <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
-                </section>
-
-
-
-            <section onclick="scheduleB()">
-                <div class="bl-box">
                     <h2>Avoid Conflict</h2>
                 </div>
 
@@ -135,6 +102,7 @@
                         <br>
                         <span class="bl-icon-close" style='opacity: 0.85;'><i class="fa fa-times fa-3x" aria-hidden="true"></i></span></div>
                 </section>
+
 
 
 
