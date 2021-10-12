@@ -7,6 +7,14 @@ require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 $_SESSION['temp_message'] = "";
 $_SESSION['energy_expended'] = 80;
 
+if($_SESSION['game_step']==2) {
+	$_SESSION['energy_expended'] = 100;
+}
+
+if($_SESSION['game_step']==3) {
+	$_SESSION['energy_expended'] = 120;
+}
+
 if(!isset($_SESSION['game_step'])) {
 //initial get vars
 $sql = "SELECT game_step, money, resets FROM users WHERE user_id = ?";
@@ -56,10 +64,15 @@ function returnToGame() {
 	if($_SESSION['enemy_hp'] <= 0) {
 		++$_SESSION['game_step'];
 		$_SESSION['money'] = $_SESSION['money'] + 1000;
+		$_SESSION['specialMSG'] = true;
 	}
 	
 	$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." ATP. The enemy dealt ".$_SESSION['dmg_receieved']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
 
+	if($_SESSION['specialMSG']==true) {
+		$_SESSION['specialMSG']=false;
+		$_SESSION['temp_message'] = "You successfully beat your opponent and you have now progressed to the next stage. You absorbed 1000 ATP points from defeating your opponent. You now have ".$_SESSION['money']."";
+	}
 	checkDead();
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
