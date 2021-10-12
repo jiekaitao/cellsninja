@@ -121,7 +121,10 @@
     <br>
     <br>
     <br>
-    <?php echo htmlspecialchars($_SESSION["temp_message"]); ?>
+    <?php echo $_SESSION['temp_message']; ?>
+    <script>
+        alert('<?php echo $_SESSION['temp_message'] ?>');
+    </script>
     <br>
 </h1>
 <br>

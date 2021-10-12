@@ -50,8 +50,6 @@ function checkDead(){
 
 function returnToGame() {
 
-	checkDead();
-
 	$_SESSION['money'] = $_SESSION['money'] + $_SESSION['recovery'] - $_SESSION['energy_expended'] - $_SESSION['dmg_receieved'];
 	if($_GET['choice']==3) { $_SESSION['enemy_hp'] = $_SESSION['enemy_hp'] - $_SESSION['damage']; }
 
@@ -59,9 +57,9 @@ function returnToGame() {
 		++$_SESSION['game_step'];
 	}
 	
-	$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
-	die($_SESSION['temp_message']);
-	
+	$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." ATP. The enemy dealt ".$_SESSION['dmg_receieved']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
+
+	checkDead();
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
 }
