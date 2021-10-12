@@ -37,6 +37,18 @@ function saveData($game_step, $money, $resets){
 
 }
 
+function checkDead($game_step, $money, $resets){
+	
+	$sql = "UPDATE users SET game_step = ?, money = ?, resets = ? WHERE user_id = ?";
+	$stmt = mysqli_prepare($link, $sql);
+	mysqli_stmt_bind_param($stmt, "iiis", $param_game_step, $param_money, $param_resets, $param_user_id);
+	
+	$param_game_step = $_SESSION['game_step'];
+
+	mysqli_stmt_execute($stmt);
+
+}
+
 if($game_step == 0) {
 //Step 0, user is fresh
 //redirect to class picker

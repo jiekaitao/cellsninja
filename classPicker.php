@@ -175,60 +175,23 @@
                 </div>
 
                 <div class="bl-content">
-                    <h2>Class Schedule (MS) <p id="demo-b"></p></h2>
+                    <h2>Eukaryote Class </h2>
 
-                    <p>Here is a quick preview. Please be sure that you've selected the correct schedule. If you found a mistake in the schedule, please use the contact form to report the error. Thank you.</p>
-                    <br>
-                    WARNING! The website will play a digital "bell" noise. If you do not want this, please mute the page tab!
-                    <br>
-                    <br>
-                    <h1>Schedule Clock (Time until next bell ring)
-                    </h1>
-                    <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                          <div id="clockdiv2">
-                            <div>
-                              <span class="daysB">
-                              </span>
-                              <div class="smalltext">Days
-                              </div>
-                            </div>
-                            <div>
-                              <span class="hoursB">
-                              </span>
-                              <div class="smalltext">Hours
-                              </div>
-                            </div>
-                            <div>
-                              <span class="minutesB">
-                              </span>
-                              <div class="smalltext">Minutes
-                              </div>
-                            </div>
-                            <div>
-                              <span class="secondsB">
-                              </span>
-                              <div class="smalltext">Seconds
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                    <p>The T-800 Organic Cyber Eukaryote From The Perilous Future is a super genetically 
+                        modified plant cell that contains an unnatural amount of chloroplasts and mitochondria.
+                        <br>
+                        <br>
+                        Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
 
                         <br>
                         <br>
 
-                    <div style="font-size: 0.5; opacity: 0.55;">
-
-                        <p id="demo3-b">
-                        </p>
-                        <p id="demo4-b" style='margin-top: -80px;'>
-                        </p>
-                        <p id="demo2-b" style='visibility: hidden;'>
-                        </p>
-                    </div>
+                        <div class="dropdown">
+                        <span>Mouse over me</span>
+                        <div class="dropdown-content">
+                        <p>Hello World!</p>
                         </div>
-                      </div>
+                        </div>
                     <br>
                     <br>
 

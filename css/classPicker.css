@@ -15,6 +15,52 @@ display: none;
 
 
 
+
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* transitions: Codrops, src https://tympanus.net/codrops/2013/04/23/fullscreen-layout-with-page-transitions/ */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
