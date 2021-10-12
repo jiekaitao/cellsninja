@@ -113,10 +113,10 @@ if ($_SESSION['game_step'] > 0) {
 
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
-					$_SESSION['damage'] = 450;
+					$_SESSION['damage'] = 550;
 					returnToGame();
 				} else {
-					$_SESSION['damage'] = 0;
+					$_SESSION['damage'] = 30;
 					returnToGame();
 				}	
 			} else {
@@ -138,7 +138,7 @@ if ($_SESSION['game_step'] > 0) {
 			//chose avoid conflict
 			if($_SESSION['class'] == "PRO") {
 				if($rng > 5) {
-					$_SESSION['recovery'] = 200;
+					$_SESSION['recovery'] = 300;
 					returnToGame();
 				}
 			} else {
