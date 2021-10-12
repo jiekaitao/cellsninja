@@ -60,6 +60,8 @@ function returnToGame() {
 	}
 	
 	$_SESSION['temp_message'] = "In order to keep yourself alive, you spent ".$_SESSION['energy_expended']." You now have ".$_SESSION['money']." total ATP. You recovered ".$_SESSION['recovery']." ATP. You dealt ".$_SESSION['damage']." damage. The enemy now has ".$_SESSION['enemy_hp']." ATP remaining.";
+	die($_SESSION['temp_message']);
+	
 	header('Location: https://'.$_SERVER["HTTP_HOST"].'/game'.$_SESSION['game_step'].'.php');
 	exit();
 }
