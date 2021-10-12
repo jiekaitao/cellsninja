@@ -42,11 +42,11 @@
                 <div class="bl-content">
                     <h2>Prokaryote Class </h2>
 
-                    <p>The T-800 Organic Cyber Eukaryote From The Perilous Future is a super genetically 
-                        modified plant cell that contains an unnatural amount of chloroplasts and mitochondria.
+                    <p>The Microbot-infused Methicillin-Resistant Civilization-Ending Super Prokaryote is a super genetically 
+                        modified super bacterium that secretes enough cytotoxins to be the primary talk of the town.
                         <br>
                         <br>
-                        Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
+                        Nicknamed "Abcde," this cell starts with only 700 ATP but is sluggish is much more efficient during moves as a result of its greater surface area to volume ratio. Abcde loses only 30 ATP per round. 
                         <br>
                         <br>
                         <a href='https://cells.ninja/game.php?choice=1'>> Confirm Selection</a>
