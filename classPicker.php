@@ -189,9 +189,24 @@
                         <div class="dropdown">
                         <span>Mouse over me</span>
                         <div class="dropdown-content">
-                        <p style='color: red;'>Hello World!</p>
+                        <p style='color: red; font-size: 15px;'>Hello World!</p>
                         </div>
                         </div>
+                        <br>
+                        <br>
+                        <div class="dropdown">
+                        <span>Mouse over me</span>
+                        <div class="dropdown-content">
+                        <p style='color: red; font-size: 15px;'>Hello World!</p>
+                        </div>
+                        </div>
+                        <br>
+                        <br>
+
+
+
+
+
                     <br>
                     <br>
 
