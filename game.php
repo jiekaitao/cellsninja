@@ -43,7 +43,7 @@ function saveData($game_step, $money, $resets){
 function checkDead(){
 	
 	if($_SESSION['money'] <= 0) {
-		die('You died. Your guts leak out and lysis destroys your precious cell membrane. You did not survive the 2077 cell evolution event. :(');
+		die('You died. Your guts leak out and the process of lysis destroys your precious cell membrane. You did not survive the 2077 cell evolution event. :(');
 	}
 
 }
