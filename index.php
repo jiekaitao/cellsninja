@@ -52,7 +52,13 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
 
-								<div class="page_no"><span id='playerCNT'></span>/17</div>
+								<div class="page_no">
+								<?php if($playerCNT==0) { ?>
+									0
+									<?php } else { ?>
+									<span id='playerCNT'></span>
+									<?php } ?>
+									/17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
 									<br>
 									<hr>
