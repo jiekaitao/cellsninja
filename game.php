@@ -85,32 +85,59 @@ if ($_SESSION['game_step'] == 1) {
 	//redirect to picker if needed
 
 	if($_SESSION['enemy_hp'] > 0) {
+		$rng = rand(1, 10);
+		$_SESSION['dmg_receieved'] = rand(100, 300);
+
+
+
+
+
 		if ($_GET['choice']==3) {
 		//chose attack
 		checkDead();
-		$rng = rand(1, 10);
 
 			if($_SESSION['class'] == "PRO") {
-				$damage = $rng 
+				if($rng > 5) {
+					$_SESSION['damage'] = 450;
+				} else {
+					$_SESSION['damage'] = 0;
+				}
 			} else {
-
+				if($rng > 5) {
+					$_SESSION['damage'] = 200;
+				} else {
+					$_SESSION['damage'] = 200;
+					$_SESSION['recovery'] = $_SESSION['dmg_receieved'] / 2;
+				}
 			}
+
+
+
+
 
 		} elseif ($_GET['choice']==4) {
-
+			//chose avoid conflict
 			if($_SESSION['class'] == "PRO") {
-
+				if($rng > 5) {
+					$_SESSION['recovery'] = 200;
+				}
 			} else {
-
+				$_SESSION['dmg_receieved'] = 0;
 			}
 
 
+
+
+
+			
+
 		} else {
-		header('Location: https://'.$_SERVER["HTTP_HOST"].'/classPicker.php');
+		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game1.php');
 		exit();
 		}
 	} else {
-		header('Location: https://'.$_SERVER["HTTP_HOST"].'/game2.php');
+		//header('Location: https://'.$_SERVER["HTTP_HOST"].'/game2.php');
+		die("you won!");
 		exit();
 	}
 }
