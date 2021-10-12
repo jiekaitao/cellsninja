@@ -1,6 +1,6 @@
 <html>
 
-Pedro Castillo <br>
+Pedro Castilho<br>
 Jie Tao (Jack)<br>
 Ryan Phinney<br>
 
