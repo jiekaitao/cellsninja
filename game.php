@@ -3,6 +3,9 @@ session_start();
 //database config/password info
 require_once($_SERVER['DOCUMENT_ROOT']."/imports/config.php");
 
+if($_SESSION['game_step']==4) {
+	die("You won! If you would to play again, please clear your cookies.");
+}
 
 $_SESSION['temp_message'] = "";
 $_SESSION['energy_expended'] = 80;
