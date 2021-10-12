@@ -52,7 +52,7 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 							<div class="col-sm-2 padding_0">
 								<!--p class="mens_taital">Organelle Trail Live!</p-->
 
-								<div class="page_no"><?php echo htmlspecialchars($playerCNT); ?>/17</div>
+								<div class="page_no"><span id='playerCNT'></span>/17</div>
 								<?php if(isset($_SESSION['user_id'])) { ?>
 									<br>
 									<hr>
@@ -154,17 +154,17 @@ $.post('https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/updat
 <?php } ?>
 
 	
-	//Load the file containing the chat log
-	function loadRoomcnt(){		
-		$.ajax({
-			url: 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/handlers/gameRoomcnt.html',
-			cache: false,
-			success: function(html){
-				$("#playerCNT").html(html); //Insert chat log into the #chatbox div				
-		  	},
-		});
-	}
-	setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
+//Load the file containing the chat log
+function loadRoomcnt(){		
+	$.ajax({
+		url: 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/handlers/gameRoomcnt.html',
+		cache: false,
+		success: function(html){
+			$("#playerCNT").html(html); //Insert chat log into the #chatbox div				
+		},
+	});
+}
+setInterval (loadRoomcnt, 300);	//Reload file every 300 ms
 	
 	
 </script>
