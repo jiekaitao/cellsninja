@@ -107,7 +107,7 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 		<div class="collection_section">
     	<div class="container">
     		<h1 class="new_text"><strong>Game Objective</strong></h1>
-    	    <p class="consectetur_text">Build</p>
+    	    <p class="consectetur_text">Take control of one of two cells and fight for the survival of the human race! Serve as a bulwark of strength in the face of unyielding evil!</p>
     	</div>
     </div>
     <div class="collectipn_section_3 layuot_padding">
@@ -118,7 +118,7 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
     					<div class="shoes-img3"><img src="images/shoes-img3.png"></div>
     				</div>
     				<div class="col-md-4">
-    					<div class="sale_text"><strong>Sale <br><span style="color: #0a0506;">JOGING</span> <br>SHOES</strong></div>
+    					<div class="sale_text"><strong>Fight!<br><span style="color: #0a0506;">Win!</span> <br>Live!</strong></div>
     					<div class="number_text"><strong>$ <span style="color: #0a0506">100</span></strong></div>
     					<button class="seemore">See More</button>
     				</div>
