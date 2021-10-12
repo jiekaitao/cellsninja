@@ -189,7 +189,7 @@
                         <div class="dropdown">
                         <span>Cell Wall</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>Provides extra protection to eukaryotic cells. This is an upgrade to the Cell membrane, as it attaches itself to the outside of the membrane.</p>
+                        <p style='color: red; font-size: 7px;'>Provides extra protection to eukaryotic cells. This is an upgrade to the Cell membrane, as it attaches itself to the outside of the membrane.</p>
                         </div>
                         </div>
                         <br>
@@ -197,7 +197,7 @@
                         <div class="dropdown">
                         <span>Cell Membrane</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>The most basic form of protection in cells remains semi-permeable to allow vital materials to pass through itself in order to provide the cell with the materials critical to its survival.</p>
+                        <p style='color: red; font-size: 7px;'>The most basic form of protection in cells remains semi-permeable to allow vital materials to pass through itself in order to provide the cell with the materials critical to its survival.</p>
                         </div>
                         </div>
                         <br>
@@ -205,7 +205,7 @@
                         <div class="dropdown">
                         <span>Nucleus</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>Only available for the eukaryotic cell class, the nucleus is protected by a two lipid bilayer known as the nuclear envelope scattered with pores to allow for vital materials through.  The nucleus acts as the control center for the cell, controlling all functions of the cell, such as metabolism, growth, and also houses all genetic material.  The nucleus also contains a nucleolus, which synthesizes rRNA and ribosomes.</p>
+                        <p style='color: red; font-size: 7px;'>Only available for the eukaryotic cell class, the nucleus is protected by a two lipid bilayer known as the nuclear envelope scattered with pores to allow for vital materials through.  The nucleus acts as the control center for the cell, controlling all functions of the cell, such as metabolism, growth, and also houses all genetic material.  The nucleus also contains a nucleolus, which synthesizes rRNA and ribosomes.</p>
                         </div>
                         </div>
                         <br>
@@ -213,7 +213,7 @@
                         <div class="dropdown">
                         <span>Ribosomes</span>
                         <div class="dropdown-content">
-                        <p style='color: red; font-size: 15px;'>Required by both classes of cells, ribosomes’ primary function is to convert genetic code into amino acid sequences and build protein polymers from amino acid monomers; this is a process known as protein synthesis or translation.  Ribosomes can either be found in the cytosol known as free ribosomes, or they can be found in the rough endoplasmic reticulum (ER), where the protein they synthesize can be excreted from the cell.
+                        <p style='color: red; font-size: 7px;'>Required by both classes of cells, ribosomes’ primary function is to convert genetic code into amino acid sequences and build protein polymers from amino acid monomers; this is a process known as protein synthesis or translation.  Ribosomes can either be found in the cytosol known as free ribosomes, or they can be found in the rough endoplasmic reticulum (ER), where the protein they synthesize can be excreted from the cell.
 </p>
                         </div>
                         </div>
