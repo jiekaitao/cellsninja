@@ -124,7 +124,7 @@
     <br>
     <br>
     <br>
-    <?php echo htmlspecialchars($_SESSION['temp_message']); ?>
+    <span style='color: red;'><?php echo htmlspecialchars($_SESSION['temp_message']); ?></span>
     <br>
 </h1>
 <br>
