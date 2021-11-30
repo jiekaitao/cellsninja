@@ -73,11 +73,11 @@ if ($_SESSION['account']=="just created" && $_SESSION['updater']!="done") {
 									<h1 class="mens_text"><strong>Organelle Trail</strong></h1>
 									<p class="lorem_text">The world-famous Organelle Trail game! And definately not a ripoff of Oregon Trail!</p>
 									<?php if(isset($_SESSION['user_id'])) { ?>
-										<button class="buy_bt" onclick="window.location.href = 'http://cells.ninja/game.php';">Join</button>
-										<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restart.php';">Restart Acc.</button>
+										<button class="buy_bt" onclick="window.location.href = 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/game.php';">Join</button>
+										<button class="more_bt" onclick="window.location.href = 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/restart.php';">Restart Acc.</button>
 									<?php } else { ?> 
-									<button class="buy_bt" onclick="window.location.href = 'https://cells.ninja/php/register.php';">New Acc.</button> 
-									<button class="more_bt" onclick="window.location.href = 'https://cells.ninja/restore.php';">Restore Acc.</button>
+									<button class="buy_bt" onclick="window.location.href = 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/php/register.php';">New Acc.</button> 
+									<button class="more_bt" onclick="window.location.href = 'https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/restore.php';">Restore Acc.</button>
 									<?php } ?>
 								</div>
 							</div>

@@ -5,7 +5,7 @@ Error 404: DNA not found
 
 <br>
 <br>
-<a href='https://cells.ninja'>Take me back to the bloodstream.</a>
+<a href='https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>'>Take me back to the bloodstream.</a>
 
 
 

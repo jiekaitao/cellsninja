@@ -51,11 +51,11 @@
                         Nicknamed "Abcde," this cell starts with only 700 ATP but is sluggish is much more efficient during moves as a result of its greater surface area to volume ratio. Abcde loses only 30 ATP per round. 
                         <br>
                         <br>
-                        <a href='https://cells.ninja/game.php?choice=1'>> Confirm Selection</a>
+                        <a href='https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/game.php?choice=1'>> Confirm Selection</a>
                         <br>
                         <br>
                         
-                        <iframe src="https://cells.ninja/classEukaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
+                        <iframe src="https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/classEukaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
 
 
 
@@ -87,12 +87,12 @@
                         Nicknamed "Bob," this cell starts with a copious 1000 ATP but is sluggish and loses 80 ATP per movement. It has a 25% chance of randomly gaining 200 ATP per movement.
                         <br>
                         <br>
-                        <a href='https://cells.ninja/game.php?choice=2'>Confirm Selection</a>
+                        <a href='https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/game.php?choice=2'>Confirm Selection</a>
                         <br>
                         <br>
                         <em>
                             
-                        <iframe src="https://cells.ninja/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
+                        <iframe src="https://<?php echo htmlspecialchars($_SERVER["HTTP_HOST"]); ?>/classProkaryoteInfo.php" style="border:none;height:400px;width:1000px;" title="description"></iframe>
 
                         <br>
                         <br>
